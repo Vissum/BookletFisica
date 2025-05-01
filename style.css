@@ -16,14 +16,19 @@ body {
     place-content: center;
     height: 100vh;
     width: 100vw;
-	overflow: hidden;
+	  overflow: hidden;
 
-    background-image: url("https://thumbs.dreamstime.com/b/agujero-negro-y-plasma-brillante-en-el-espacio-universo-278552830.jpg");
-}
+   
+    background-image: url("https://preview.redd.it/i-am-so-frustrated-im-borderline-depressed-how-can-i-make-v0-dz5k7e7wb6ia1.gif?width=520&auto=webp&s=d822e6d175d275ff03dcded47a5a651e9d441c1a");
+    background-size: cover;
+  }
+
+ 
 
 .flipbook {
-    width: 90vw;
-    height: 800px;
+  top: 40px;
+    width: 1000px;
+    height: 700px;
 }
 
 .flipbook .hard {
@@ -103,6 +108,7 @@ body {
   }
   
   #titulos-pag{
+    text-align: left;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: large;
     font-weight: large;
@@ -110,17 +116,26 @@ body {
     font-style: normal;
   }
 
-  .titulos-pag{
-    position: relative;
-    top: -320px;
-    left: -310px;
-  }
+  .titulos-pag {
+    text-align: left;
+    margin-top: 1rem;
+}
 
-  .Concepto{
-    position: relative;
-    top: -325px;
-    left: -340px;
+  
+
+  .Concepto {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 1rem;
   }
+  
+  @media (min-width: 768px) {
+    .Concepto {
+      max-width: 700px;
+    }
+  }
+  
 
   .Concepto h3{
     font-family: "Orbitron", sans-serif;
@@ -134,16 +149,6 @@ body {
     font-size: smaller;
   }
 
-  .Esquema{
-    position: inherit;
-    top: 200px;
-    left: 150px;
-  }
-
-  .Esquema img{
-    align-items: center;
-    width: 80%;
-  }
 
   .formula-item {
     position: relative;
@@ -174,56 +179,56 @@ body {
     font-size: 2em;
 }
 
-.Formulas{
-  position: relative;
-  top: -60px;
-  left: -140px;
 
-}
 
 .Ejemplo{
   position: relative;
-  top: -10px;
-  left: -30px;
+ 
 }
 .Ejemplo img{
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  max-height: fit-content;
   width: 100%;
   height: 100%;
 
 }
 
 .video-ejemplo{
-  position: absolute;
+  position: relative;
   top: 20px;
-  left: 80px;
+  left: 0;
+  margin-top: -7rem;
+  margin-left: 3rem;
 }
-.video-ejemplo h3{
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: large;
-  font-weight: large;
-  font-size: large;
-  font-style: normal;
-}
+
 
 .video-ejemplo iframe{
   position: relative;
-  top: 70px;
-  width: 560px;
-  height: 315px;
+  margin-top: 1rem;
+  width: 90%; 
+  height: auto;
+ 
 }
 
 .video-ejemplo p{
   position: relative;
   top: 20px;
+  
   font-family: sans-serif;
   font-size: medium;
 }
+
+
 .Ejercicio{
   position: relative;
   top: 110px;
 }
 
 .Ejercicio h3{
+  position: inherit;
+  top: -30px;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: large;
   font-weight: large;
@@ -234,19 +239,19 @@ body {
   position: inherit;
   top: 15px;
   font-family: sans-serif;
-  font-size: medium;
+  font-size: small;
 } 
 
-.Ejemplo2{
-  position: relative;
-  top: -10px;
-  left: -30px;
-}
-.Ejemplo2 img{
-  width: 90%;
-  height: 80%;
 
+.Ejercicio li{
+  position: relative;
+  top: 15px;
+  font-family: sans-serif;
+  font-size: smaller;
 }
+
+
+
 
 #titulos-pag-g{
   font-family: "Orbitron", sans-serif;
@@ -259,5 +264,115 @@ body {
 .titulos-pag-g{
   position: relative;
   top: -320px;
-  left: -85px;
+    left: -310px;
+  }
+
+  /* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .flipbook {
+    width: 95%; /* Adjust flipbook width */
+    height: auto; /* Adjust flipbook height automatically */
+  }
+  .flipbook .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-y: auto;
+    height: 100%;
+  }
+  
 } 
+  
+  .portada img{
+    width: 100%; /* Adjust to full width */
+    height: auto; /* Adjust height automatically */
+    position: relative;
+    top: 10px; /* Adjust vertical position */
+    left: 0; /* Center horizontally */
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+  }
+
+  .portada2 img{
+    width: 100%; /* Adjust to full width */
+    height: auto; /* Adjust height automatically */
+    position: relative;
+    top: 10px; /* Adjust vertical position */
+    left: 0; /* Center horizontally */
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+  }
+
+  
+
+  .Concepto {
+    top: -200px; /* Adjust vertical position */
+    left: 0; /* Center horizontally */
+    text-align: center; /* Center text */
+    width: 100%;
+  }
+
+  .Concepto p {
+    position: relative; 
+    top: 20px; 
+    width: 90%;
+  }
+
+  .Esquema {
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 80%;
+  }
+  .Esquema img {
+    width: 100%;
+    max-width: 100%; /
+    height: auto; 
+  }
+  .Esquema2 {
+    position: relative; 
+    top: 0;
+    left: 0; 
+    width: 80%;
+  }
+
+  .Esquema2 img {
+    width: 70%; 
+    max-width: 70%; 
+    height: auto; 
+  }
+
+  .formula-item {
+    width: 90%; /* Adjust width */
+    margin: 10px auto; /* Center horizontally */
+  }
+
+  .Formulas {
+    position: relative;
+    top: -30px; /* Adjust position */
+    left: 0; /* Center horizontally */
+  }
+
+  .Formulas p{
+    position: relative;
+    margin-top: 10px;
+    font-size: small;
+    text-align: center;
+  }
+
+  .Ejemplo {
+    top: 0; /* Adjust position */
+    left: 0; /* Center horizontally */
+    width: 100%;
+  }
+
+  .Ejemplo p{
+    font-size: small;
+    text-align: center;
+  }
+
+
+
